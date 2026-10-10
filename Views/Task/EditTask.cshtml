@@ -21,8 +21,9 @@
                 </div>
 
                 <div class="mb-3">
-                    <label for="deadline" class="form-label fw-semibold">Deadline</label>
-                    <input type="datetime-local" name="DeadLine" id="deadline" value="@Model.DeadLine" class="form-control">
+                    <input type="datetime-local" name="DeadLine" id="deadline"
+                           value="@Model.DeadLine.ToString("yyyy-MM-ddTHH:mm")"
+                           class="form-control">
                 </div>
 
                 <div class="mb-4">
